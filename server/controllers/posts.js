@@ -7,7 +7,7 @@ const router = express.Router(); //these logics are used in routes of post.js
 
 export const getPosts = async (req, res) => { 
     try {
-        const postMessages = await PostMessage.find();
+        const postMessages = await PostMessage.find(); //Finding will take time so asynchronous operation use async await 
                 
         res.status(200).json(postMessages);
     } catch (error) {
