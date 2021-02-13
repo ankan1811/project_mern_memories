@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 import PostMessage from '../models/postMessage.js';
 
-const router = express.Router();
+const router = express.Router(); //these logics are used in routes of post.js
 
 export const getPosts = async (req, res) => { 
     try {
